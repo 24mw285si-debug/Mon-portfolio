@@ -1,0 +1,45 @@
+:root{
+    --violet-doux: #6C63FF;
+    --violet-fonce: #534EDD;
+    --orange-vif: #FFA726;
+    --gris-trés-fonce: #333;
+    --gris-fonce: #666;
+    --gris-trés-clair: #F8F8F8;
+    --gris-clair: #EEE;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: var(--gris-clair);
+    color: var(--gris-trés-fonce);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+header h1{
+    color: var(--violet-doux);
+}
+header a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--gris-trés-fonce);
+    font-weight: 400;
+}
+nav a :hover{
+    color: var(--violet-fonce);
+}
