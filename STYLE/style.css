@@ -34,18 +34,43 @@ header a{
     text-decoration: none;
     font-size: 2.2rem;
     font-weight: bold;
-    color: var(--violet-doux); 
+    color: var(--violet-fonce); 
 }
-nav ul{
-    display: flex;
+ul li{
     list-style: none;
-    gap: 25px;
+    margin: 15px;
 }
-nav a{
+ul{
+    display: flex;
+}
+ul li a{
     text-decoration: none;
     color: var(--gris-trés-fonce);
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: relative;
+    padding: 10px 0;
 }
-nav a :hover{
-    color: var(--violet-fonce);
+ul li a:hover{
+    color: var(--violet-doux);
+}
+ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--violet-doux);
+    transition: width 0.3s ease;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+a.active::after{
+    width: 100%;
+    background-color: var(--violet-doux);
+}
+.active{
+    color: var(--violet-doux);
 }
