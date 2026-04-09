@@ -193,3 +193,90 @@ footer a:hover{
     color: var(--orange-vif);
     transform: translateY(-3px);
 }
+h1{
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+h1::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+.projets{
+    padding: 50px 20px;
+    align-items: center;
+    margin: 15px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    gap: 30px;
+  
+}
+.card{
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgb(0, 0,0,0.08);
+}
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgb(0, 0,0,0.15);
+}
+.card img{
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+    border-bottom: 4px solid var(--violet-doux);
+    border-radius: 0;   
+    padding: 0;
+
+}
+.card h3{
+    font-size: 18px;
+    margin: 15px;
+    color: var(--violet-doux);
+}
+.card p{
+    font-size: 14px;
+    margin: 0 15px 15px;
+    color: var(--gris-fonce);
+}
+.tags{
+    margin-top: 10px;
+    padding: 15px;
+}
+.tags span{
+    display: inline-block;
+    background: #EEE;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px 5px 10px 0;
+    font-size: 1rem;
+    color: var(--violet-fonce);
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 15px;
+    border-top: 2px solid #EEE;
+}
+.link a{
+    text-decoration: none;
+    color: var(--gris-trés-fonce);
+    font-weight: bold;
+    font-size: 14px;
+}
+.link a:hover{
+    text-decoration: underline;
+}
